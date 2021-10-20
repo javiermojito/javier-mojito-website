@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const titleDefault = "Javier Mojito Website";
+const titleDefault = "Javier Mojito";
 const url = "https://javiermojito.com/";
 const description = "Hi, it's me, Javier Mojito. This is my website.";
 const author = "Javier Mojito";
@@ -9,6 +9,7 @@ const Header = ({ title = titleDefault }) => {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         {/* Recommended Meta Tags */}
         <meta charSet="utf-8" />
         <meta name="language" content="english" />
@@ -76,10 +77,7 @@ const Header = ({ title = titleDefault }) => {
         Be sure validate your Twitter card markup on the documentation site. */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@onirenaud" />
-        <script
-          async
-          src="https://unpkg.com/three@^0.131.0/build/three.min.js"
-        ></script>
+        <script src="https://unpkg.com/three@^0.131.0/build/three.min.js"></script>
       </Head>
     </>
   );
