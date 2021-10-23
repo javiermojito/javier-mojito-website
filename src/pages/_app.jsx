@@ -3,14 +3,13 @@ import CanvasBG from "../components/canvasBg/CanvasBG";
 import Home from "./index";
 
 import "../styles/index.css";
+import Layout from "../components/layout/Layout";
 
-function App() {
+function App({ Component, pageProps }) {
   return (
-    <>
-      <Header />
-      <Home />
-      <CanvasBG />
-    </>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 
