@@ -1,15 +1,11 @@
 import Link from "next/link";
+import Title from "../components/title/Title";
 
 export default function Home() {
   return (
     <>
-      <div className="absolute border-2 border-white p-7 left-0 right-0 mr-auto w-96 mt-24 ml-9 md:ml-14 ">
-        <h1 className="text-white font-extrabold select-none leading-none">
-          <span className="flex flex-col">
-            <span className="text-7xl leading-10">Javier </span>
-            <span className="text-8xl pt-0">Mojito</span>
-          </span>
-        </h1>
+      <div className="main-container">
+        <Title />
         {/* <div>
           fps: <span id="fps"></span>
         </div> */}

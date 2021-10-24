@@ -22,7 +22,7 @@ export default function CanvasBG() {
 
   return (
     <>
-      <Script
+      {/* <Script
         src="runtime.js"
         onLoad={() => {
           const app = new SpeRuntime.Application();
@@ -36,7 +36,7 @@ export default function CanvasBG() {
           };
           loop();
         }}
-      ></Script>
+      ></Script> */}
       <canvas id="canvas3d"></canvas>
     </>
   );

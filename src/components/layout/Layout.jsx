@@ -6,11 +6,12 @@ import Marquee from "react-fast-marquee";
 const thoughts = [
   "Life can be tought with wrong decisions",
   "This could be the place where words can get some value",
-  "I'm always in my way to be diferent, how all can be so similar sometimes?",
+  "I'm always in my way to be diferent, how all can result so similar sometimes?",
   "Sewerslvt is a very underrated artist",
   "Did you know that Akira is the most expensive animation film of all time?",
   "Scott Pilgrim vs. The World is very accurate, it came out in the wrong year",
   "... Wait, you still reading this?",
+  "My Social-o-Meter goes to 0 in about 2.7 hours. Don't make me stay longar than that pls",
 ];
 
 function Layout(props) {
@@ -39,21 +40,6 @@ function Layout(props) {
       <Header />
       {props.children}
       <CanvasBG />
-      {/* {example
-        ? example.map((message) => {
-            return (
-              <Marquee
-                direction="left"
-                className="absolute bottom-6 text-white w-screen h-auto text-sm select-none"
-                gradient={false}
-                speed={60}
-                loop={2}
-              >
-                {message}
-              </Marquee>
-            );
-          })
-        : null} */}
       <Marquee
         direction="left"
         className="absolute bottom-6 text-white w-screen h-auto text-sm select-none"

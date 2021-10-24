@@ -6,7 +6,13 @@ module.exports = {
   ], // remove unused styles in production
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        84: "21rem",
+        86: "21.5rem",
+        88: "22rem",
+      },
+    },
   },
   variants: {
     extend: {},
