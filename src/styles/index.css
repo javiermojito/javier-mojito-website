@@ -44,3 +44,34 @@ body {
 .marquee {
   animation: marquee 5s linear infinite;
 }
+
+/* Allows moving gradient background */
+body {
+  background: linear-gradient(
+    -45deg,
+    #0c0a0b,
+    #110f10,
+    #520b7e,
+    #110f10,
+    #110f10,
+    #110f10,
+    #ff0a50,
+    #110f10,
+    #0c0a0b
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

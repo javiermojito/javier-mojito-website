@@ -11,7 +11,7 @@ const thoughts = [
   "Did you know that Akira is the most expensive animation film of all time?",
   "Scott Pilgrim vs. The World is very accurate, it came out in the wrong year",
   "... Wait, you still reading this?",
-  "My Social-o-Meter goes to 0 in about 2.7 hours. Don't make me stay longar than that pls",
+  "My Social-o-Meter goes to 0 in about 2.7 hours. Don't make me stay longer than that pls",
 ];
 
 function Layout(props) {

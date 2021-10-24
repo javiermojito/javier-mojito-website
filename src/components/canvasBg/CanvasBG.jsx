@@ -22,21 +22,23 @@ export default function CanvasBG() {
 
   return (
     <>
-      {/* <Script
+      <Script
         src="runtime.js"
         onLoad={() => {
           const app = new SpeRuntime.Application();
-          app.start(getRandomScene());
-          const loop = () => {
-            // Keep looping if scene isn't init
-            if (!app._scene) return requestAnimationFrame(loop);
+          if (window.innerWidth >= 500) {
+            app.start(getRandomScene());
+            const loop = () => {
+              // Keep looping if scene isn't init
+              if (!app._scene) return requestAnimationFrame(loop);
 
-            // Otherwise, handle load here
-            console.log("loaded");
-          };
-          loop();
+              // Otherwise, handle load here
+              console.log("loaded");
+            };
+            loop();
+          }
         }}
-      ></Script> */}
+      ></Script>
       <canvas id="canvas3d"></canvas>
     </>
   );
