@@ -48,8 +48,12 @@ function Layout(props) {
         loop={0}
       >
         {thoughts
-          ? shuffle(thoughts).map((message) => {
-              return <span className="pl-96 ml-96">{message}</span>;
+          ? shuffle(thoughts).map((message, index) => {
+              return (
+                <span className="pl-96 ml-96" key={index}>
+                  {message}
+                </span>
+              );
             })
           : null}
         {/*   */}

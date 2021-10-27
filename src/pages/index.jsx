@@ -6,9 +6,6 @@ export default function Home() {
     <>
       <div className="main-container">
         <Title />
-        {/* <div>
-          fps: <span id="fps"></span>
-        </div> */}
 
         <nav className="text-white text-5xl font-bold ml-8 mt-6">
           <ul>
